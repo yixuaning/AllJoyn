@@ -251,7 +251,7 @@ display: none;
 <a class="button">&#9776;&nbsp;索引</a>
 </div>
 <ul>
-<li class="level2"><a href="#1">Architecture</a></li><li class="level3"><a href="#1.1">Network Architecture</a></li><li class="level4"><a href="#1.1.1">Apps and Routers</a></li><li class="level4"><a href="#1.1.2">Transports</a></li><li class="level3"><a href="#1.2">Software Architecture</a></li><li class="level4"><a href="#1.2.1">AllJoyn Router</a></li><li class="level4"><a href="#1.2.2">AllJoyn Core Library</a></li><li class="level4"><a href="#1.2.3">AllJoyn Service Framework Library</a></li><li class="level4"><a href="#1.2.4">AllJoyn App Code</a></li><li class="level4"><a href="#1.2.5">Thin and Standard</a></li><li class="level3"><a href="#1.3">Programming Models</a></li><li class="level4"><a href="#1.3.1">AllSeen Core Framework</a></li><li class="level4"><a href="#1.3.2">Data-Driven API</a></li><li class="level2"><a href="#2">Core Framework</a></li><li class="level3"><a href="#2.1">Bus Attachment</a></li><li class="level3"><a href="#2.2">Advertisement and Discovery</a></li><li class="level3"><a href="#2.3">Session and Port</a></li><li class="level3"><a href="#2.4">BusObject</a></li><li class="level3"><a href="#2.5">Sessionless Signal</a></li><li class="level3"><a href="#2.6">Introspection</a></li><li class="level3"><a href="#2.7">Events and Actions</a></li><li class="level3"><a href="#2.8">Security</a></li><li class="level3"><a href="#2.9">Putting It All Together</a></li><li class="level3"><a href="#2.10">Learn more</a></li></ul>
+<li class="level2"><a href="#1">Architecture</a></li><li class="level3"><a href="#1.1">Network Architecture</a></li><li class="level4"><a href="#1.1.1">Apps and Routers</a></li><li class="level4"><a href="#1.1.2">Transports</a></li><li class="level3"><a href="#1.2">Software Architecture</a></li><li class="level4"><a href="#1.2.1">AllJoyn Router</a></li><li class="level4"><a href="#1.2.2">AllJoyn Core Library</a></li><li class="level4"><a href="#1.2.3">AllJoyn Service Framework Library</a></li><li class="level4"><a href="#1.2.4">AllJoyn App Code</a></li><li class="level4"><a href="#1.2.5">Thin and Standard</a></li><li class="level3"><a href="#1.3">Programming Models</a></li><li class="level4"><a href="#1.3.1">AllSeen Core Framework</a></li><li class="level4"><a href="#1.3.2">Data-Driven API</a></li><li class="level2"><a href="#2">Core Framework</a></li><li class="level3"><a href="#2.1">Bus Attachment</a></li><li class="level3"><a href="#2.2">Advertisement and Discovery</a></li><li class="level3"><a href="#2.3">Session and Port</a></li><li class="level3"><a href="#2.4">BusObject</a></li><li class="level3"><a href="#2.5">Sessionless Signal</a></li><li class="level3"><a href="#2.6">Introspection</a></li><li class="level3"><a href="#2.7">Events and Actions</a></li><li class="level3"><a href="#2.8">Security</a></li><li class="level3"><a href="#2.9">Putting It All Together</a></li><li class="level3"><a href="#2.10">Learn more</a></li><li class="level2"><a href="#3">AllJoyn™ Standard Core</a></li><li class="level3"><a href="#3.1">Overview</a></li><li class="level3"><a href="#3.2">Benefits of the AllJoyn Framework</a></li><li class="level3"><a href="#3.3">Conceptual Overview</a></li><li class="level3"><a href="#3.4">AllJoyn bus</a></li><li class="level3"><a href="#3.5">Bus router</a></li><li class="level3"><a href="#3.6">Bus attachments</a></li><li class="level3"><a href="#3.7">Bus methods bus properties and bus signals</a></li><li class="level3"><a href="#3.8">Bus interfaces</a></li><li class="level3"><a href="#3.9">Bus objects and object paths</a></li></ul>
 
 </nav>
 <article>
@@ -376,6 +376,115 @@ display: none;
 <li><a href="https://allseenalliance.org/developers/learn/core/thin-core">Learn more about the AllJoyn Thin Core</a></li>
 <li><a href="https://allseenalliance.org/developers/learn/core/system-description">Learn more about the low-level details of the AllJoyn system</a></li>
 </ul>
+
+<h2 id="3">AllJoyn™ Standard Core</h2>
+<p><a href="http://37iot.com">37IOT物联网开发社区</a>是国内专业的物联网开发技术论坛，欢迎各位有趣之士进入共同进步。</p>
+<h3 id="3.1">Overview</h3>
+<p>AllJoyn框架是一个开源的软件系统，它为分布式应用运行在不同的设备提供了环境，注重移动性，安全性和动态配置。AllJoyn系统解决了异构分布式系统内在的固有问题 and addresses the unique issues that arise when mobility enters the equation。这让应用开发者可以专注于核心应用程序的构建。 </p>
+<p>AllJoyn框架是“平台无关”的(platform-neutral)，它被设计成尽可能独立的规范对于操作系统、硬件和设备运行的软件。事实上，AllJoyn框架可以运行在微软Windows，Linux，Android，iOS，OS X，OpenWrt，和作为Unity游戏开发生态系统中的一个Unity插件。 </p>
+<p>AllJoyn框架设计的理念是近距离和移动性。在移动环境中，设备将不断地进入和离开其他设备，底层网络性能也会改变。 </p>
+<p>The AllJoyn SDKs are available at (<a href="http://www.allseenalliance.org">http://www.allseenalliance.org</a>).</p>
+<p>使用AllJoyn框架的应用程序的类型十分广泛，只受开发者的想象力限制。扩展社交网络就是一个例子。用户可以定义一个兴趣爱好的配置。一旦进入一个地方，AllJoyn时能的手机会立刻发现其他在附近的有相同兴趣的同事，创建对等设备之间的通信网络，让他们进行沟通，交流信息。 </p>
+<p>今天，大多数的手机集成了Wi-Fi，所以如果两个用户走进一个有Wi-Fi热点的家或办公室，他们的设备可以连接到接入点，利用额外的网络容量。此外，他们的设备可以定位在附近的其他设备（通过Wi-Fi覆盖区域定义），可以发现在其他设备的额外服务，并使用这些服务，如果需要的话。此外，它可以利用一个混合的拓扑连接，来让设备利用AllJoyn瘦库(Thin Library)指定使用蓝牙传输。因此，一旦连接到一个运行AllJoyn框架的设备，该设备可以和应用在Wi-Fi下交互。 </p>
+<p>实时多玩家游戏是AllJoyn框架应用的另外一个实例。例如，一个多人游戏可以使用不同的设备如笔记本电脑，平板电脑和手机，和不同的底层网络技术如Wi-Fi。基础设施管理的细节都有AllJoyn框架处理，让游戏作者集中在游戏的设计与实现，而不是处理的点对点网络的复杂性。 </p>
+<p>AllJoyn生态系统扩展，可以想象到各样的应用程序，例如： </p>
+<ul>
+<li>Create a playlist consisting of music, and stream the songs to an AllJoyn-enabled car stereo system, or store them on a home stereo (subject to digital rights management)</li>
+<li>Sync recent photos or other media to an AllJoyn-enabled digital picture frame or television upon returning home from an event or trip</li>
+<li>Control home appliances such as televisions, DVRs, or game consoles</li>
+<li>Interact and share content with laptops and desktop computers in the area</li>
+<li>Engage in project collaboration between colleagues and students in enterprise and educational settings</li>
+<li>Provide proximity-based services like distributing coupons or vcards</li>
+</ul>
+<h3 id="3.2">Benefits of the AllJoyn Framework</h3>
+<p>As mentioned, the AllJoyn framework is a platform-neutral system that is designed to simplify proximity networking across heterogeneous distributed mobile systems. </p>
+<p>Heterogeneous in this case means not only different devices, but different kinds of devices (e.g., PCs, handsets, tablets, consumer electronics devices) running on different operating systems, using different communication technologies. </p>
+<p><strong>Open source</strong></p>
+<p>The AllJoyn framework is being developed as an open source project. This means that all of the AllJoyn codebase is available for inspection, and developers are encouraged to contribute additions and enhancements. If the AllJoyn framework is missing a feature, you can contribute. If you run into a snag using the AllJoyn framework, or have a technical question, other participants in the open source community are ready and willing to provide help and guidance. The AllJoyn codebase is available at (<a href="http://www.allseenalliance.org">http://www.allseenalliance.org</a>). </p>
+<p><strong>Operating system independence</strong></p>
+<p>The AllJoyn framework provides an abstraction layer allowing AllJoyn framework code and its applications to run on multiple OS platforms. As of this writing, the AllJoyn framework supports most standard Linux distributions including Ubuntu, and runs on Android 2.3 (Gingerbread) and later smartphones and tablets. The AllJoyn framework code also runs and is tested and validated on commonly available versions of the Microsoft Windows operating system including Windows XP, Windows 7, Windows RT, and Windows 8. Additionally, the AllJoyn framework code runs on Apple operating systems iOS and OS X, on embedded operating systems such as OpenWRT, and works with the Unity game development ecosystem. </p>
+<p><strong>Language independence</strong></p>
+<p>Currently, developers may create applications using C++,Java, C#, JavaScript, and Objective-C. </p>
+<p><strong>Physical network and protocol independence</strong></p>
+<p>There are many technologies available to networked devices. The AllJoyn framework provides an abstraction layer that defines clean interfaces to the underlying network stacks and makes it relatively easy for a competent software engineer to add new networking implementations. </p>
+<p>For example, as of this writing, the Wi-Fi Alliance has recently released a specification for Wi-Fi Direct, which will allow for point-to-point Wi-Fi connectivity. A networking module for Wi-Fi Direct is actively being developed that will transparently add Wi-Fi Direct and its pre-association discovery mechanisms to the available networking options for AllJoyn developers. </p>
+<p><strong>Dynamic configuration</strong></p>
+<p>Often, as a mobile device makes its way through the various locations it encounters during its lifetime, associations with networks may come and go. This means that IP (Internet Protocol) addresses may change, network interfaces may become unusable, and services may be transitory. </p>
+<p>The AllJoyn framework notices when old services are lost and new services appear, and forms new associations when required. The AllJoyn framework is primed and ready as an application layer for Wi-Fi Hotspot 2.0 - a technology that aims to bring the roaming transparency of cell phones and cell towers to Wi-Fi hotspots. </p>
+<p><strong>Service advertisement and discovery</strong></p>
+<p>Whenever devices need to communicate, there must be some form of service advertisement and discovery. In the old days of static networks, human administrators made explicit arrangements to enable devices to communicate. More recently, the concepts of zero configuration networks have been popularized, especially with Apple Bonjour, and Microsoft Universal Plug and Play. We also see existing technology-specific discovery mechanisms available such the Bluetooth Service Discovery Protocol and emerging mechanisms such as the Wi-Fi Direct P2P Discovery specification. The AllJoyn framework provides a service advertisement and discovery abstraction that simplifies the process of locating and consuming services. </p>
+<p><strong>Security</strong></p>
+<p>The natural model for security in distributed applications is application-to-application. Unfortunately, in many cases, the network security model does not match this natural arrangement. For example, the Bluetooth protocol requires pairing between devices. Using this approach, once devices are paired, all applications on both devices are authorized. This may not be desirable when considering something more capable than a Bluetooth headset. For example, if two laptops are connected over Bluetooth, a much finer granularity is necessary. The AllJoyn framework is designed to provide extensive support for complex security models such as this, with an emphasis on application-to-application communication. </p>
+<p>Object model and remote method invocation 
+The AllJoyn framework utilizes an easy-to-understand object model and Remote Method Invocation (RMI) mechanism. The AllJoyn model re-implements the wire protocol set forth by the D-Bus specification and extends the D-Bus wire protocol to support distributed devices. </p>
+<p>Software componentry 
+Along with a standard object model and wire protocol comes the ability to standardize various interfaces into components. In much the same way that a Java Interface declaration provides a specification to interact with a local instantiation of an implementation, the AllJoyn object model provides a language-independent specification to interact with a remote implementation. </p>
+<p>Using a specification, many interface implementations can be considered, thereby enabling standard definitions for application communication. This is the enabling technology for software componentry. Software components are at the heart of many modern systems, and are especially visible in systems such as Android, which defines four primary component types as the only way to participate in the Android Application Framework; or in Microsoft systems which use descendants of the Component Object Model (COM) system. </p>
+<p>We expect that a rich &quot;sea&quot; of interface definitions will emerge in order to enable the scenarios described in Overview. The AllJoyn project expects to work with users to define and publish standard interfaces and support the sharing of implementations. </p>
+<h3 id="3.3">Conceptual Overview</h3>
+<p>AllJoyn框架包含许多帮助理解和叙述不同的pieces的抽象。只需要知道少数关键的抽象来理解AllJoyn-Based Systems。</p>
+<p>本节提供了一个AllJoyn框架的high-level view,为后续的文档，如详细的API文档提供了基础。 </p>
+<p>Remote Method Invocation 
+Distributed systems are groups of autonomous computers communicating over some form of network in order to achieve a common goal. Consider the ability of a program running in one address space on one machine to call a procedure located in another address space on a physically separate machine as if it were local. This is usually accomplished through Remote Procedure Call (RPC) or, if object-oriented concepts are in play, RMI or Remote Invocation (RI).</p>
+<p>The basic model in an RPC exchange involves a client, which is the caller of the RPC, and a server (called a service in the AllJoyn model), which actually executes the desired remote procedure. The caller executes a client stub that looks just like a local procedure on the local system. The client stub packages up the parameters of its procedure (called marshaling or serializing the parameters) into some form of message and then calls in to the RPC system to arrange delivery of the message over some standard transport mechanism such as the Transmission Control Protocol (TCP). At the remote machine, there is a corresponding RPC system running, which unmarshals (deserializes) the parameters and delivers the message to a server stub that arranges to execute the desired procedure. If the called procedure needs to return any information, a similar process is used to convey the return values back to the client stub, which in turn returns them to the original caller.</p>
+<p>Note that it is not required that a given process only implement a client personality or a service personality. If two or more processes implement the same client and service aspects,
+they are considered peers. In many cases, AllJoyn applications will implement similar functionality and be considered peers. The AllJoyn framework supports both classic client and service functions and also peer-to-peer networking.</p>
+
+<h3 id="3.4">AllJoyn bus</h3>
+<p><a href="http://37iot.com">37IOT物联网开发社区</a>是国内专业的物联网开发技术论坛，欢迎各位有趣之士进入共同进步。</p>
+<p>AllJoyn系统最基本的抽象就是AllJoyn总线。它为分布式系统提供了一个快速、轻量级的方式来传递消息序列。你可以将AllJoyn总线看作是消息传递的&quot;高速公路&quot;。图片显示了单一设备上AllJoyn总线实例在理论上的结构。
+<img src="https://allseenalliance.org/sites/default/files/developers/learn/standard-core/prototypical-alljoyn-bus.png" alt="prototypical-alljoyn-bus"></p>
+<p>Figure: Prototypical AllJoyn bus</p>
+<p>典型的AllJoyn总线特性如下：</p>
+<ul>
+<li><p>总线用加粗的水平黑线表示。垂直线可以被认为是消息通过总线在源点和目的点之间传递的&quot;出口&quot;。</p>
+</li>
+<li><p>所示的总线连接被描述为了六边形（这是任意选择的形状）。正如高速公路的出口通常都具有编号，图中每个连接都分配了唯一的连接名称。为了清晰起见，这里使用连接名称的简化形式。</p>
+</li>
+<li><p>许多情况下，总线上的连接都可以被认为是进程的合作方。因此，在图2的例子中，独特的连接名称：1.1可能被分配给应用程序实例进程的一个连接，而独特的连接名称：1.4可能被分配给其它应用程序实例进程的连接。AllJoyn总线的目标就是让两个应用程序进行通信，而无需处理底层机制的细节。其中一个连接可以认为是客户端存根，另一方就可以认为是服务器存根。</p>
+</li>
+</ul>
+<p>上图显示了AllJoyn总线的一个实例，并说明了软件总线如何给连接到总线上的组件提供进程间通信。AllJoyn总线的典型设备扩展如下图所示。组件可根据需要，在Smartphone和Linux主机上的组件之间创建逻辑总线段之间的通信链路。
+<img src="https://allseenalliance.org/sites/default/files/developers/learn/standard-core/device-device-comm.png" alt="device-device-comm"></p>
+<p>Figure: Device-to-device communication handled by the AllJoyn framework</p>
+<p>通信链路的管理由AllJoyn系统负责，并且由许多底层技术组成，例如Wi-Fi和蓝牙技术。可能有不同的设备参与管理AllJoyn总线，但是这对分布式总线上的用户都是透明的。对于总线上的某个组成部分，分布式AllJoyn系统看起来就像是本地设备中的总线。</p>
+<p>下图显示了分布式总线对于总线上的用户是如何呈现的。一个组件（例如，智能手机连接的名称为1.1）可以创建一个进程来调用Linux主机上的名称为1.7的组件，而无需担心该组件的物理位置。
+<img src="&quot;https://allseenalliance.org/sites/default/files/developers/learn/standard-core/dist-bus-local-bus.png&quot;" alt="dist-bus-local-bus"></p>
+<p>Figure: A distributed AllJoyn bus appears as a local bus</p>
+<h3 id="3.5">Bus router</h3>
+<p>上图说明了逻辑分布式总线实际上被分成了若干个段，每个段都运行在不同的设备上。AllJoyn从功能上实现这些逻辑总线段的进程被称为AllJoyn router。</p>
+<p>Unix派生系统中的长驻守护进程，通常用来描述运行在计算机系统中并提供一些必要功能的程序。在Linux系统中，不叫做daemon，我们把它叫做单独的router(standalone router)。在Windows系统中，长驻服务更加常见，但是我仍然是指AllJoyn Router。
+<img src="https://allseenalliance.org/sites/default/files/developers/learn/standard-core/bubble-diagram-bus.png" alt="bubble-diagram-bus"></p>
+<p>Figure: Relating bubble diagrams to the bus</p>
+<p>为了让AllJoyn router更形象化，我们创建气泡图是很有用的。考虑两段AllJoyn总线，一段位于Smartphone上而另一段位于Linux主机，如上图所示。总线连接被标记为了客户端（C）和服务器（S）基于RMI模型。执行分布式总线核心的AllJoyn  router被标记为（D）。上图中的组件通常被解释为下图所示的插图。</p>
+<blockquote>
+<p>alljoyn-bubble-diagram
+Figure: AllJoyn bubble diagrams</p>
+</blockquote>
+<p>气泡可以被看作分布式系统上运行的计算机进程。左侧的两个客户端（C）和一个服务（S）进程运行在Smartphone上。这三个进程与Smartphone上的AllJoyn Router通信，实现了分布式AllJoyn总线上的本地网段。在右侧，也有一个Router，它在Linux主机上实现了AllJoyn总线的本地网段。这两个Router将协调整个逻辑总线的消息流，如图4所示，逻辑总线是单一的实体连接。类似Smartphone中的配置，Linux主机上有两个服务组件和一个客户端组件。</p>
+<p>在此配置中，客户端组件C1可以采用远程方法来调用服务组件S1，就像它是一个本地对象。参数在源头进行封装，并由Smartphone上的Router送至本地总线段的路由。封装参数通过网络链接（从客户端来看是透明的）发送至Linux主机上的Router。而Linux主机上运行的Router确定目的地是S1，并且对封装参数进行拆封，然后通知服务去调用远程方法。如果有返回值，那么将反向进行这个通信过程，把返回值传回给客户端。</p>
+<p>由于standalone Router在后台运行，并且客户端和服务都运行在单独的进程中，所以在每个单独进程中必须有一个Router的&quot;代理&quot;。 AllJoyn将调用这些代理总线附件。</p>
+<h3 id="3.6">Bus attachments</h3>
+<p>每个AllJoyn总线连接都需要一个特定的AllJoyn组件作为介质，它称为总线附件。每个需要连接AllJoyn总线的进程都有一个总线附件。</p>
+<p>当在硬件和软件之间讨论软件组件时，往往会引出一个比喻。我们可以将分布式AllJoyn总线的本地网段想象为台式电脑的底板硬件总线。硬件总线本身就能传递电子信息，并且有一个可以插卡的点称为连接器。AllJoyn中类似功能的连接器就是总线附件。</p>
+<p>AllJoyn总线附件是本地指定语言的对象，它代表了分布式AllJoyn总线中的客户端、服务或对等点。例如，这里有为用户提供总线附件功能的C++语言实现，还有为用户提供相同总线附件功能的Java语言实现。由于AllJoyn增加了语言支持，将会有更多这样的具体语言实现。</p>
+<h3 id="3.7">Bus methods bus properties and bus signals</h3>
+<p>AllJoyn基本上是一个面向对象的系统。在面向对象的系统中，人们将谈论对象中的调用方法（因此对于分布式系统，人们将谈论长驻远程方法调用）。面向对象编程中的对象需要有成员。通常，还需要对象方法或属性，在AllJoyn中就是BusMethods和BusProperties。AllJoyn同样也有总线信号（BusSignal），它是对象中某些事件或状态变化的异步通知。</p>
+<p>为了使客户端、服务和对等点之间的通信更加透明，那么总线方法和总线信号中的参数顺序必须有一些规范，并且总线属性中也必须有一些形式的类型信息。对于计算机科学，方法（或信号）输入和输出类型的申明或定义被称为类型签名。</p>
+<p>类型签名使用字符串来定义，包括所有的基本数字类型（对于大多数编程语言），以及从这些基本类型创建出的复合类型，例如数组和结构体。类型签名的具体分配和使用超出了本文介绍的范围，但是总线方法、信号或属性的类型签名将传递给AllJoyn底层系统，来实现总线上传递参数和封装返回值的转换。</p>
+<h3 id="3.8">Bus interfaces</h3>
+<p>在大多数面向对象的编程系统中，方法或属性集合将合并到具备固有内在联系的群组中。该集合函数的统一申明被称为接口。接口为执行接口规范的实体与外界之间的连接提供服务。正因为如此，接口需要适当的标准结构来实现标准化。各种网站上可以找到众多的接口服务规范，从电话到媒体播放器控制。D-Bus规范在XML中进行描述来指定接口。</p>
+<p>接口规范会将总线方法、总线信号、总线属性以及与它们相关的类型签名组合到一个命名组中。而实际上，接口会由客户端、服务或对等点进程来实现。如果实现了给定的命名接口，那么在这个实现和外界之间会有一个隐性契约，接口将会支持它所有的总线方法、总线信号和总线属性。</p>
+<p>接口名称通常采用域名反转形式。例如，这里有许多AllJoyn实现的标准接口。其中有一个标准接口是theorg.alljoyn.Businterface，将守护实现并为总线附件提供一些基本功能。</p>
+<p>值得注意的是，接口名称仅仅是相对自由形式的命名空间中的一个字符串，并且其它命名空间可能也有类似的外观。接口名称字符串提供的特定函数不应该和其它类似的字符串混淆，特别是总线名称。例如，org.alljoyn.sample.chat可能是总线名称常量，就是客户端搜索的名字。但是也有可能org.alljoyn.sample.chat是接口名称，它定义了总线对象采用特定的总线名称连接到总线附件上时提供的方法、信号和属性。如果存在给定接口名称的接口就暗示了总线名称的存在；但是，它们确实是两个完全不同的东西，有时可能长得一模一样。</p>
+<h3 id="3.9">Bus objects and object paths</h3>
+<p>总线接口提供了一种标准的方式来声明分布式系统中的接口。总线对象提供桥接到可能实现给定接口规范的地方。总线对象存在于总线附件中，并作为通信的终点。</p>
+<p>因为，在特殊的总线附件中，特定的接口可能会有多种实现，所以必须增加额外的结构体来区分这些接口实现。这将由对象路径来提供。</p>
+<p>就像接口名称是命名空间中的一个字符串，对象路径同样也存在于命名空间中。命名空间的结构就像一棵树，路径的思维模式就是文件系统的目录树。事实上，对象路径的路径分隔符使用的是斜杠字符，和Unix文件系统类似。由于总线对象是总线接口的实现，所以对象路径可以遵循相应接口的命名约定。如果定义了一个磁盘控制器接口（exampleorg.freedesktop.DeviceKit.Disks），那么你就可以想象，对于同一系统中的两个分开的物理磁盘，这个接口的不同实现应该遵循下面的对象路径：</p>
+<blockquote>
+<p>/org/freedesktop/DeviceKit/Disks/sda1
+/org/freedesktop/DeviceKit/Disks/sda2 </p>
+</blockquote>
 
 </article>
 <footer>

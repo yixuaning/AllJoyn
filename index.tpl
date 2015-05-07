@@ -254,6 +254,8 @@ display: none;
 <article>
 <x-markdown src="section/001_AllJoyn-Architecture.md" />
 <x-markdown src="section/002_AllJoyn-Core-Framework.md" />
+<x-markdown src="section/005_AllJoyn-Standard-Core-01.md" />
+<x-markdown src="section/005_AllJoyn-Standard-Core-02.md" />
 </article>
 <footer>
 <x-markdown src="section/99_footer.md" />
