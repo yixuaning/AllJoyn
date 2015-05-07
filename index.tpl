@@ -105,23 +105,21 @@ content: "› ";
 
 article h2 {
 border-bottom: dotted 1px #777;
-font-size: 12pt;
+font-size: 17pt;
 line-height: 100%;
 margin: 4em 0 1em 0;
 padding: 0 0 0.3em 0;
 }
 
 article h3 {
-font-size: 12pt;
+font-size: 15pt;
 line-height: 100%;
 margin: 2em 0 1em 0;
 padding: 0;
 }
 
 article h4 {
-font-size: 12pt;
-font-style:italic;
-font-weight: normal;
+font-size: 13pt;
 line-height: 100%;
 margin: 1.2em 0 1em 0;
 padding: 0;

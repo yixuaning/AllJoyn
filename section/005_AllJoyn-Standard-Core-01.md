@@ -63,7 +63,7 @@ The natural model for security in distributed applications is application-to-app
 Object model and remote method invocation 
 The AllJoyn framework utilizes an easy-to-understand object model and Remote Method Invocation (RMI) mechanism. The AllJoyn model re-implements the wire protocol set forth by the D-Bus specification and extends the D-Bus wire protocol to support distributed devices. 
 
-Software componentry 
+**Software componentry**
 Along with a standard object model and wire protocol comes the ability to standardize various interfaces into components. In much the same way that a Java Interface declaration provides a specification to interact with a local instantiation of an implementation, the AllJoyn object model provides a language-independent specification to interact with a remote implementation. 
 
 Using a specification, many interface implementations can be considered, thereby enabling standard definitions for application communication. This is the enabling technology for software componentry. Software components are at the heart of many modern systems, and are especially visible in systems such as Android, which defines four primary component types as the only way to participate in the Android Application Framework; or in Microsoft systems which use descendants of the Component Object Model (COM) system. 
@@ -75,7 +75,7 @@ AllJoyn框架包含许多帮助理解和叙述不同的pieces的抽象。只需�
 
 本节提供了一个AllJoyn框架的high-level view,为后续的文档，如详细的API文档提供了基础。 
 
-Remote Method Invocation 
+#### Remote Method Invocation 
 Distributed systems are groups of autonomous computers communicating over some form of network in order to achieve a common goal. Consider the ability of a program running in one address space on one machine to call a procedure located in another address space on a physically separate machine as if it were local. This is usually accomplished through Remote Procedure Call (RPC) or, if object-oriented concepts are in play, RMI or Remote Invocation (RI).
 
 The basic model in an RPC exchange involves a client, which is the caller of the RPC, and a server (called a service in the AllJoyn model), which actually executes the desired remote procedure. The caller executes a client stub that looks just like a local procedure on the local system. The client stub packages up the parameters of its procedure (called marshaling or serializing the parameters) into some form of message and then calls in to the RPC system to arrange delivery of the message over some standard transport mechanism such as the Transmission Control Protocol (TCP). At the remote machine, there is a corresponding RPC system running, which unmarshals (deserializes) the parameters and delivers the message to a server stub that arranges to execute the desired procedure. If the called procedure needs to return any information, a similar process is used to convey the return values back to the client stub, which in turn returns them to the original caller.
