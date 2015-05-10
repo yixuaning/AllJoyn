@@ -1,7 +1,7 @@
 ## Architecture
 [37IOT物联网开发社区](http://37iot.com)是国内专业的物联网开发技术论坛，欢迎各位有趣之士进入共同进步。
 ### Network Architecture
-AllJoyn框架运行在本地网络上。它可以让设备和应用去公布和发现对方。这一节讲述网络架构和各种各样的AllJoyn组件之间的关系。
+AllJoyn框架运行在本地网络上。它可以让设备和应用去广告和发现对方。这一节讲述网络架构和各种各样的AllJoyn组件之间的关系。
 
 #### Apps and Routers
 AllJoyn框架包含AllJoyn应用和AllJoyn路由(Routers)，或者简称为应用和路由。应用与路由通信和路由与应用通信。应用和其他应用只能够通过路由来通讯。
@@ -34,7 +34,7 @@ AllJoyn路由在AllJoyn Routers and Applications之间转发AllJoyn messages ，
 
 #### AllJoyn Core Library
 AllJoyn Core Library提供最底层的一套API去和AllJoyn Network交互。它提供了直接调用：
-* 发布和发现
+* 广告和发现
 * 创建会话
 * 接口定义(方法、属性，信号)
 * 创建和处理对象

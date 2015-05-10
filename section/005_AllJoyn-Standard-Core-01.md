@@ -64,6 +64,7 @@ Object model and remote method invocation
 The AllJoyn framework utilizes an easy-to-understand object model and Remote Method Invocation (RMI) mechanism. The AllJoyn model re-implements the wire protocol set forth by the D-Bus specification and extends the D-Bus wire protocol to support distributed devices. 
 
 **Software componentry**
+
 Along with a standard object model and wire protocol comes the ability to standardize various interfaces into components. In much the same way that a Java Interface declaration provides a specification to interact with a local instantiation of an implementation, the AllJoyn object model provides a language-independent specification to interact with a remote implementation. 
 
 Using a specification, many interface implementations can be considered, thereby enabling standard definitions for application communication. This is the enabling technology for software componentry. Software components are at the heart of many modern systems, and are especially visible in systems such as Android, which defines four primary component types as the only way to participate in the Android Application Framework; or in Microsoft systems which use descendants of the Component Object Model (COM) system. 

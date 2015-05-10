@@ -4,12 +4,12 @@
 [37IOT物联网开发社区](http://37iot.com)是国内专业的物联网开发技术论坛，欢迎各位有趣之士进入共同进步。
 
 ### Bus Attachment 
-AllJoyn应用使用和与AllJoyn网络交互必须要在初始化一个AllJoyn总线附属对象(AllJoyn Bus Attachment object)并且将这个对象连接到AllJoyn路由(AllJoyn Router)后。 
+AllJoyn应用使用和与AllJoyn网络交互必须要在初始化一个AllJoyn总线连接对象(AllJoyn Bus Attachment object)并且将这个对象连接到AllJoyn路由(AllJoyn Router)后。 
 
 ### Advertisement and Discovery 
 AllJoyn应用可以广告他的服务通过两种机制：About Announcements and Well-Known Name。根据现有的传输(transports)，AllJoyn框架将使用不同的机制来确保应用程序可以由其他AllJoyn应用发现。 对于基于IP的传输，使用mDNS和多路广播与广播UDP包的组合。
 
-**About Announcements** 是被推荐使用的广告机制。它提供了通用的的方法去广播一组一致的应用感兴趣的元数据，如，模型，支持的接口，图形化的图标，以及更多。
+**About Announcements** 是被推荐使用的广告机制。它提供了通用的的方法去广告一组一致的应用感兴趣的元数据，如，模型，支持的接口，图形化的图标，以及更多。
 
 **Well-Known Name** 对于应用去公布和发现对方是一种更底层的机制。它是About Announcements使用的机制。推荐应用使用About Announcements机制，除非这里对这种低等级(lower-level)的功能有特别的需要。
 
@@ -30,7 +30,7 @@ AllJoyn应用互相通讯通过BusObject抽象。这种抽象的地图(abstracti
 
 一个BusObject可以实现一组接口。每个接口清楚地定义了一组BusMethods,BusProperties, and BusSignals。BusMethods容许远程实体调用方法。BusProperties可以被获取和设置。BusSignals是应用提供的服务所发出的的信号。
 
-BusObject附属在一个特别的总线路径上。这容许更大的灵活性，同一个对象可以为不同的目的而附属在不同的总线路径上。例如，如果应用为一个灶台实现了一个服务，StoveBurner BusObject能够连接到多个总线路径比如'/range/left', '/range/right' 能够被创建去控制个别火炉燃烧器。
+BusObject连接在一个特别的总线路径上。这容许更大的灵活性，同一个对象可以为不同的目的而连接在不同的总线路径上。例如，如果应用为一个灶台实现了一个服务，StoveBurner BusObject能够连接到多个总线路径比如'/range/left', '/range/right' 能够被创建去控制个别火炉燃烧器。
 
 ProxyBusObject是远程应用创建的对象来获取BusObject权限。
 
@@ -58,7 +58,8 @@ AllJoyn应用通过总线连接与AllJoyn框架交互。应用通过About公告�
 会话创建之前，应用程序可以创建任意数量的总线对象，放在特定的对象路径。每个总线对象可以实现一组接口，由一组方法，属性，和信号定义。
 
 会话创建后，远程应用程序通常会通过创建本地ProxyBusObject与BusObject交互，包括调用方法，获取和设置属性，接收信号。​
- ![alljoyn-core-components](https://allseenalliance.org/sites/default/files/developers/learn/alljoyn-core-components.png)
+
+![alljoyn-core-components](https://allseenalliance.org/sites/default/files/developers/learn/alljoyn-core-components.png)
  
 在许多情况下，用户端发现，建立会话和代理对象的管理遵循一个简单的，在应用中常见的模式。标准核心库用[Observer](https://allseenalliance.org/developers/develop/api-guide/core/observer/) class为这种情况提供了一个便利的API。The Observer class自动解析About公告，会话管理和为用户应用创建代理对象(Proxy object)
 

@@ -135,7 +135,7 @@ border: 1px solid #ccc;
 }
 
 article p strong {
-color: #f00;
+color: #778899;
 }
 
 article pre {
@@ -254,6 +254,7 @@ display: none;
 <x-markdown src="section/002_AllJoyn-Core-Framework.md" />
 <x-markdown src="section/005_AllJoyn-Standard-Core-01.md" />
 <x-markdown src="section/005_AllJoyn-Standard-Core-02.md" />
+<x-markdown src="section/005_AllJoyn-Standard-Core-03.md" />
 </article>
 <footer>
 <x-markdown src="section/99_footer.md" />
